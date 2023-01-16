@@ -5,11 +5,10 @@ public String name;
 public int grade;
 public Student(String studentName){
     this.name = studentName;
-    System.out.println("Creating a new student " + studentName);
+    System.out.println("Creating a new student! His name is " + studentName);
 }
-
     public void getStudentDetails(){
-        System.out.println(name + ", that is in " + grade + " grade");
+        System.out.println("The student " + name + " has received the grade " + grade);
 }
 
 }

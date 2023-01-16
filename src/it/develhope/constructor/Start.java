@@ -2,40 +2,25 @@ package it.develhope.constructor;
 
 public class Start {
     public static void main(String[] args) {
-Student student1 = new Student("Kate");
-Student student2 = new Student("Jason");
+
+System.out.println("-------------STARTING--------------------");
+
 Teacher teacher1 = new Teacher();
-teacher1.teacherName = "Steven";
-student1.grade = 11;
-student2.grade = 12;
-student1.assignGrade();
-student2.assignGrade();
+Student student1 = new Student("Fabrizio");
+Student student2 = new Student("Giulio");
+
+System.out.println("---------Assigning grades----------------");
+
+teacher1.assignGrade(student1, 28);
+student1.getStudentDetails();
+
+System.out.println("-----------------------------------------");
+
+teacher1.assignGrade(student2, 30);
+student2.getStudentDetails();
+
+System.out.println("-----------------------------------------");
+
     }
 }
 
-
-/**
- * Main method from where the Java program starts.
- * @param args for all the parameters from command line
- */
-
-
-/*define a testing class where you:
-        create 2 students
-        create 1 teacher
-        assign a name to the teacher
-        assign grades to the 2 students
-        prints the students' details*/
-// create 2 students
-
-
-// create 1 teacher
-
-
-// assign a name to the teacher
-
-
-// assign grades to the 2 students
-
-
-// print the students details
